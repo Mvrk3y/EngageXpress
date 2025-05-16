@@ -1,0 +1,79 @@
+body {
+    text-align: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(-45deg, rgb(255, 2, 2), rgb(0, 177, 247), rgb(248, 0, 0));
+  background-size: 600% 600%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+    
+    img {
+      max-width: 55%;
+      
+      margin: 10px 0;
+    }
+    .services, .payments, .prices {
+      margin: 30px 0;
+    }
+    .whatsapp-btn {
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    #excitedwoman {
+      width: 30%;
+      
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .container2 {
+      display: flex;
+      flex-direction: row;
+      size: 30vh;
+      justify-self: start;
+
+    }
+
+.payment-scroll {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 50px; /* Adjust as needed */
+}
+
+.payment-buttons {
+  display: inline-flex;
+  gap: 16px;
+  position: absolute;
+  white-space: nowrap;
+  animation: scroll-buttons 10s linear infinite;
+}
+
+@keyframes scroll-buttons {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
